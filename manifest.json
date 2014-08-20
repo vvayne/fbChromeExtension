@@ -3,12 +3,12 @@
     "name": "Minimal Distraction Facebook",
     "description": "A wealth a information creates a poverty of attention. This extension will save your attention.",
     "version": "1.0",
-
     "content_scripts": [{
         "matches": ["*://*.facebook.com/*"],
-        "js": ["jquery.min.js", "minimize.js"]
-    }
-
-    ],
+        "js": ["jquery.js", "minimize.js"],
+	"all_frames": true
+    }],
     "run_at": "document_start"
+
+    
 }
